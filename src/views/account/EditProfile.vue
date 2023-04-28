@@ -3,6 +3,7 @@
     <div id="EditProfile" class="container max-w-4xl px-6 pt-20 pb-20 mx-auto ">
         <div class="text-xl text-gray-900">Edit Profile</div>
             <div class="w-full h-1 bg-green-500"></div>
+            <Cropper-Modal/>
             <div class="flex flex-wrap mt-4 mb-6">
                 <div class="w-full px-3 md:w-1/2">
                 <TextInput
@@ -65,6 +66,7 @@
 <script setup>
 import {ref} from 'vue'
 import TextInput from '@/components/global/TextInput.vue';
+import CropperModal from '@/components/global/CropperModal.vue';
 import DisplayCropperButton from '@/components/global/DisplayCropperButton.vue';
 import TextArea from '@/components/global/TextArea.vue';
 import SubmitFormButton from '@/components/global/SubmitFormButton.vue';
